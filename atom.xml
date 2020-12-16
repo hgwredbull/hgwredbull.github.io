@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Hcn</title>
+  
+  <subtitle>Hcn_の博客</subtitle>
+  <link href="http://hgwredbull.github.io/atom.xml" rel="self"/>
+  
+  <link href="http://hgwredbull.github.io/"/>
+  <updated>2020-12-13T14:36:59.091Z</updated>
+  <id>http://hgwredbull.github.io/</id>
+  
+  <author>
+    <name>Hcn</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>实践二</title>
+    <link href="http://hgwredbull.github.io/2020/12/13/%E5%AE%9E%E8%B7%B5%E4%BA%8C/"/>
+    <id>http://hgwredbull.github.io/2020/12/13/%E5%AE%9E%E8%B7%B5%E4%BA%8C/</id>
+    <published>2020-12-13T14:36:59.000Z</published>
+    <updated>2020-12-13T14:36:59.091Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>实践</title>
+    <link href="http://hgwredbull.github.io/2020/12/13/%E5%AE%9E%E8%B7%B5/"/>
+    <id>http://hgwredbull.github.io/2020/12/13/%E5%AE%9E%E8%B7%B5/</id>
+    <published>2020-12-13T13:57:49.000Z</published>
+    <updated>2020-12-14T04:24:15.149Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;第一章&quot;&gt;&lt;a href=&quot;#第一章&quot; class=&quot;headerlink&quot; title=&quot;第一章&quot;&gt;&lt;/a&gt;第一章&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;hexo&lt;/li&gt;
+&lt;li&gt;Github&lt;/li&gt;
+&lt;li&gt;blog&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>我的第一篇博客文章</title>
+    <link href="http://hgwredbull.github.io/2020/12/09/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/"/>
+    <id>http://hgwredbull.github.io/2020/12/09/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/</id>
+    <published>2020-12-09T10:39:29.000Z</published>
+    <updated>2020-12-09T10:39:29.906Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://hgwredbull.github.io/2020/12/09/hello-world/"/>
+    <id>http://hgwredbull.github.io/2020/12/09/hello-world/</id>
+    <published>2020-12-09T10:25:18.080Z</published>
+    <updated>2020-12-09T10:25:18.080Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+</feed>
