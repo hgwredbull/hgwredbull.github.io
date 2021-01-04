@@ -580,7 +580,7 @@
         },
         xAxis: {
             type: 'category',
-            data: ["2019-12","2020-01","2020-02","2020-03","2020-04","2020-05","2020-06","2020-07","2020-08","2020-09","2020-10","2020-11","2020-12"]
+            data: ["2020-01","2020-02","2020-03","2020-04","2020-05","2020-06","2020-07","2020-08","2020-09","2020-10","2020-11","2020-12","2021-01"]
         },
         yAxis: {
             type: 'value',
@@ -590,7 +590,7 @@
                 name: '文章篇数',
                 type: 'line',
                 color: ['#6772e5'],
-                data: [0,0,0,0,0,0,0,0,0,0,0,0,4],
+                data: [0,0,0,0,0,0,0,0,0,0,0,4,0],
                 markPoint: {
                     symbolSize: 45,
                     color: ['#fa755a','#3ecf8e','#82d3f4'],
@@ -902,7 +902,7 @@
         <div class="col s12 m8 l8 copy-right">
             Copyright&nbsp;&copy;
             
-                <span id="year">2020</span>
+                <span id="year">2020-2021</span>
             
             <span id="year">2020</span>
             <a href="/about" target="_blank">Hcn</a>
@@ -918,17 +918,16 @@
             
             
             
-            <span id="busuanzi_container_site_pv">
-                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
-                    class="white-color"></span>&nbsp;次
-            </span>
+            <span id="busuanzi_container_site_pv" style='display:none'>
+                 <i class="fa fa-heart-o"></i> 
+                 本站总访问量 <span id="busuanzi_value_site_pv"class="white-color"></span>
+            </span> 
             
             
-            <span id="busuanzi_container_site_uv">
-                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
-                    class="white-color"></span>&nbsp;人
-            </span>
+                 <span id="busuanzi_container_site_uv" style='display:none'> 人次,&nbsp;访客数 <span id="busuanzi_value_site_uv"class="white-color"></span> 人. 
+                 </span> 
             
+
             <br>
             
             <br>
@@ -967,6 +966,8 @@
 
 </div>
     </div>
+   
+
 </footer>
 
 <div class="progress-bar"></div>
