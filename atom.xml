@@ -6,7 +6,7 @@
   <link href="http://hgwredbull.github.io/atom.xml" rel="self"/>
   
   <link href="http://hgwredbull.github.io/"/>
-  <updated>2021-01-06T09:18:22.911Z</updated>
+  <updated>2021-01-06T12:53:29.940Z</updated>
   <id>http://hgwredbull.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://hgwredbull.github.io/2021/01/05/nmap-shi-yong-zhi-nan/"/>
     <id>http://hgwredbull.github.io/2021/01/05/nmap-shi-yong-zhi-nan/</id>
     <published>2021-01-05T13:28:10.000Z</published>
-    <updated>2021-01-06T09:18:22.911Z</updated>
+    <updated>2021-01-06T12:53:29.940Z</updated>
     
     
       
@@ -39,6 +39,8 @@
     
     
     <category term="Nmap" scheme="http://hgwredbull.github.io/tags/Nmap/"/>
+    
+    <category term="网络渗透" scheme="http://hgwredbull.github.io/tags/%E7%BD%91%E7%BB%9C%E6%B8%97%E9%80%8F/"/>
     
   </entry>
   
