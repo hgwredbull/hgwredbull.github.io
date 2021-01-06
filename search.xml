@@ -48,9 +48,23 @@
       <link href="2020/12/13/shi-jian/"/>
       <url>2020/12/13/shi-jian/</url>
       
-        <content type="html"><![CDATA[<h2 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h2><ul><li>hexo</li><li>Github</li><li>blog</li></ul><h2 id="第二章"><a href="#第二章" class="headerlink" title="第二章"></a>第二章</h2><h2 id="软件安装与配置"><a href="#软件安装与配置" class="headerlink" title="   软件安装与配置"></a>   软件安装与配置</h2>]]></content>
+        <content type="html"><![CDATA[<h1 id="适合新手的CTF靶场集合"><a href="#适合新手的CTF靶场集合" class="headerlink" title="适合新手的CTF靶场集合"></a>适合新手的CTF靶场集合</h1><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>​    一直想步入CTF的大阵营，逛CSDN时候发现了适合新手的CTF靶场的集合。多看多学多思考</p><hr><h2 id="CTF-比赛时间表"><a href="#CTF-比赛时间表" class="headerlink" title="CTF 比赛时间表"></a>CTF 比赛时间表</h2><ul><li>CTFwiki（入门必看wiki）:<a href="https://ctf-wiki.github.io/ctf-wiki/#/introduction">https://ctf-wiki.github.io/ctf-wiki/#/introduction</a></li><li>XCTF社区：<a href="https://time.xctf.org.cn/">https://time.xctf.org.cn</a></li><li>i春秋:<a href="https://www.ichunqiu.com/competition">https://www.ichunqiu.com/competition</a></li><li>CTFrank:<a href="https://ctfrank.org/">https://ctfrank.org/</a></li><li>CTFtime（基本都是国外的）: <a href="https://ctftime.org/">https://ctftime.org</a></li></ul><h2 id="本地靶场"><a href="#本地靶场" class="headerlink" title="本地靶场"></a>本地靶场</h2><ul><li>SQLi: <a href="https://github.com/Audi-1/sqli-labs">https://github.com/Audi-1/sqli-labs</a></li><li>DVWA: <a href="https://github.com/ethicalhack3r/DVWA">https://github.com/ethicalhack3r/DVWA</a></li><li>metsploitable3: <a href="https://github.com/rapid7/metasploitable3/">https://github.com/rapid7/metasploitable3/</a></li><li>Webgoat:<a href="https://github.com/WebGoat/WebGoat">https://github.com/WebGoat/WebGoat</a></li><li>Juiceshop: <a href="https://github.com/bkimminich/juice-shop">https://github.com/bkimminich/juice-shop</a></li></ul><h2 id="国内-CTF"><a href="#国内-CTF" class="headerlink" title="国内 CTF"></a>国内 CTF</h2><ul><li>实验吧:  [<a href="http://www.shiyanbar.com/">http://www.shiyanbar.com</a></li><li>XCTF 实训平台: [<a href="http://oj.xctf.org.cn/">http://oj.xctf.org.cn</a></li><li>安恒周周练： <a href="https://www.linkedbyx.com/home">https://www.linkedbyx.com/home</a></li><li>XSS专练： <a href="https://xss.haozi.me/tools/xss-encode/">https://xss.haozi.me/tools/xss-encode/</a></li><li>南京邮电大学CTF/网络攻防训练平台: <a href="http://ctf.nuptzj.cn/">http://ctf.nuptzj.cn/</a></li><li>BugkuCTF: <a href="https://ctf.bugku.com/">https://ctf.bugku.com/</a></li></ul><h2 id="国外CTF"><a href="#国外CTF" class="headerlink" title="国外CTF"></a>国外CTF</h2><ul><li>Root-me: [<a href="https://root-me.org/">https://root-me.org</a></li><li>CTF365: <a href="https://ctf365.com/">https://ctf365.com/</a></li></ul><h2 id="漏洞复现"><a href="#漏洞复现" class="headerlink" title="漏洞复现"></a>漏洞复现</h2><ul><li>Vulhub: <a href="https://github.com/vulhub/vulhub">https://github.com/vulhub/vulhub</a></li></ul><h2 id="其它大佬整理的链接"><a href="#其它大佬整理的链接" class="headerlink" title="其它大佬整理的链接"></a>其它大佬整理的链接</h2><ul><li>Awesome-Platforms/CTF-Platforms: <a href="https://github.com/We5ter/Awesome-Platforms/blob/master/CTF-Platforms.md">https://github.com/We5ter/Awesome-Platforms/blob/master/CTF-Platforms.md</a></li><li>知乎提问： <a href="https://www.zhihu.com/question/267204109/answer/320502511">https://www.zhihu.com/question/267204109/answer/320502511</a></li></ul><p>另外，对于各个入门ctf的小伙伴，建议看看XCTF上的攻防世界，上面的题目由浅入深还是挺好的</p><p>主要就是看wp需要金币，CSDN里转载的<a href="https://www.xiaozzz.xyz/"></a><a href="https://www.xiaozzz.xyz/">xiaoZ’s Blog的博客</a>里，有需要的可以看看。<a href="https://www.xiaozzz.xyz/">https://www.xiaozzz.xyz/</a></p><p>置</p>]]></content>
       
       
+      <categories>
+          
+          <category> 实用工具 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> CTF </tag>
+            
+            <tag> 渗透测试 </tag>
+            
+        </tags>
       
     </entry>
     
