@@ -361,7 +361,7 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/1.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/33.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -480,12 +480,25 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/Nmap/">
+                                <span class="chip bg-color">Nmap</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/" class="post-category">
+                                实用工具
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -530,9 +543,9 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="Nmap介绍"><a href="#Nmap介绍" class="headerlink" title="Nmap介绍"></a>Nmap介绍</h1><hr>
+                <h1 id="0x001-Nmap-简介"><a href="#0x001-Nmap-简介" class="headerlink" title="0x001 Nmap 简介"></a>0x001 Nmap 简介</h1><hr>
 <p>​    Nmap是一款网络扫描和主机检测的非常有用的工具。Nmap是不局限于仅仅收集信息和枚举，同时可以用来作为一个漏洞探测器或安全扫描器。它可以适用于windows,linux,mac等操作系统。</p>
-<h1 id="Nmap用途"><a href="#Nmap用途" class="headerlink" title="Nmap用途"></a>Nmap用途</h1><hr>
+<h1 id="0x002-Nmap用途"><a href="#0x002-Nmap用途" class="headerlink" title="0x002 Nmap用途"></a>0x002 Nmap用途</h1><hr>
 <ol>
 <li><p>检测活在网络上的主机（主机发现）</p>
 </li>
@@ -545,10 +558,10 @@
 <li><p>检测脆弱性的漏洞（Nmap的脚本）</p>
 </li>
 </ol>
-<h1 id="Nmap-基础使用"><a href="#Nmap-基础使用" class="headerlink" title="Nmap 基础使用"></a>Nmap 基础使用</h1><hr>
+<h1 id="0x003-Nmap-基础使用"><a href="#0x003-Nmap-基础使用" class="headerlink" title="0x003 Nmap 基础使用"></a>0x003 Nmap 基础使用</h1><hr>
 <h2 id="Nmap-命令行参数"><a href="#Nmap-命令行参数" class="headerlink" title="Nmap 命令行参数"></a>Nmap 命令行参数</h2><figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">nmap [<span class="function">Scan <span class="title">Type</span><span class="params">(s)</span>] [Options] </span>{target specification}</span><br><span class="line"><span class="function">scan <span class="title">type</span><span class="params">(s)</span> 用于指定扫描类型</span></span><br><span class="line"><span class="function">options 用于指定选项</span></span><br><span class="line"><span class="function">target specification 用于指定扫描目标</span></span><br><span class="line"><span class="function">-s 指定扫描类型</span></span><br><span class="line"><span class="function">如下：</span></span><br><span class="line"><span class="function">-<span class="title">sP</span> <span class="params">(ping扫描)</span> *存活主机探测</span></span><br><span class="line"><span class="function">-<span class="title">sS</span> <span class="params">(TCP SYN扫描 隐身扫描)</span>  *默认扫描方式</span></span><br><span class="line"><span class="function">-<span class="title">sT</span> <span class="params">(TCP扫描)</span>  *SYN不能用时就TCP扫描</span></span><br><span class="line"><span class="function">-<span class="title">sU</span> <span class="params">(UDP扫描)</span></span></span><br><span class="line"><span class="function">-<span class="title">sA</span> <span class="params">(ACK扫描)</span>  *三次握手 用于探测出防火墙过滤端口 实际渗透中没有多大用途</span></span><br><span class="line"><span class="function">-<span class="title">sV</span> <span class="params">(版本探测)</span></span></span><br><span class="line"><span class="function">-<span class="title">A</span>  <span class="params">(操作系统探测)</span></span></span><br><span class="line"><span class="function">-<span class="title">O</span>  <span class="params">(启用操作系统检测)</span></span></span><br><span class="line"><span class="function">-v 详细 选项说明</span></span><br><span class="line"><span class="function">-P0 [指定端口] <span class="params">(无ping扫描)</span> </span></span><br><span class="line"><span class="function">-PU [指定端口] <span class="params">(udp ping扫描)</span> </span></span><br><span class="line"><span class="function">-PS [指定端口] <span class="params">(TCP SYN ping 扫描)</span> </span></span><br><span class="line"><span class="function">-PA [指定端口] <span class="params">(tcp ack ping扫描)</span> </span></span><br><span class="line"><span class="function">-PI 使用真正的pingICMP echo请求来扫描目标主机是否正在运行</span></span><br><span class="line"><span class="function">-iL 指定扫描主机列表 </span></span><br><span class="line"><span class="function">-iR 随机选择目标 </span></span><br><span class="line"><span class="function">--exclude 排除扫描目标 </span></span><br><span class="line"><span class="function">--excludefile 排除文件中目标列表 </span></span><br><span class="line"><span class="function">-<span class="title">n</span> <span class="params">(不用域名解析)</span> </span></span><br><span class="line"><span class="function">-<span class="title">R</span> <span class="params">(为所有目标解析域名)</span></span></span><br><span class="line"><span class="function">-T 时间优化（每隔多久发一次包 ） </span></span><br><span class="line"><span class="function">-T5 最快 </span></span><br><span class="line"><span class="function">-T0 最慢</span></span><br><span class="line"><span class="function">-F 快速扫描 </span></span><br><span class="line"><span class="function">-e 指定网络接口</span></span><br><span class="line"><span class="function"></span></span><br></pre></td></tr></tbody></table></figure>
 
-<h2 id="Ping-扫描"><a href="#Ping-扫描" class="headerlink" title="Ping 扫描"></a>Ping 扫描</h2><figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">nmap -sn <span class="number">202.100</span><span class="number">.1</span><span class="number">.0</span>/<span class="number">24</span></span><br><span class="line">nmap -sn <span class="number">202.100</span><span class="number">.1</span><span class="number">.10</span> <span class="number">202.100</span><span class="number">.1</span><span class="number">.11</span> </span><br><span class="line">nmap -sn <span class="number">202.100</span><span class="number">.1</span><span class="number">.10</span>-<span class="number">100</span> </span><br><span class="line">nmap -sn -iL Ahost </span><br><span class="line">nmap -sn <span class="number">202.100</span><span class="number">.1</span><span class="number">.0</span>/<span class="number">24</span> -execlude <span class="number">202.100</span><span class="number">.1</span><span class="number">.254</span> </span><br><span class="line">nmap -sn <span class="number">202.100</span><span class="number">.1</span><span class="number">.0</span>/<span class="number">24</span> -excludefile Ahost </span><br><span class="line"></span><br><span class="line">Ahost：主机清单 </span><br><span class="line">-execlude：排除指定主机</span><br><span class="line"></span><br></pre></td></tr></tbody></table></figure>
+<h2 id="ping-扫描"><a href="#ping-扫描" class="headerlink" title="ping 扫描"></a>ping 扫描</h2><figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">nmap -sn <span class="number">202.100</span><span class="number">.1</span><span class="number">.0</span>/<span class="number">24</span></span><br><span class="line">nmap -sn <span class="number">202.100</span><span class="number">.1</span><span class="number">.10</span> <span class="number">202.100</span><span class="number">.1</span><span class="number">.11</span> </span><br><span class="line">nmap -sn <span class="number">202.100</span><span class="number">.1</span><span class="number">.10</span>-<span class="number">100</span> </span><br><span class="line">nmap -sn -iL Ahost </span><br><span class="line">nmap -sn <span class="number">202.100</span><span class="number">.1</span><span class="number">.0</span>/<span class="number">24</span> -execlude <span class="number">202.100</span><span class="number">.1</span><span class="number">.254</span> </span><br><span class="line">nmap -sn <span class="number">202.100</span><span class="number">.1</span><span class="number">.0</span>/<span class="number">24</span> -excludefile Ahost </span><br><span class="line"></span><br><span class="line">Ahost：主机清单 </span><br><span class="line">-execlude：排除指定主机</span><br><span class="line"></span><br></pre></td></tr></tbody></table></figure>
 
 <h2 id="TCP-UDP-扫描"><a href="#TCP-UDP-扫描" class="headerlink" title="TCP/UDP 扫描"></a>TCP/UDP 扫描</h2><figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">TCP SYN 扫描 </span><br><span class="line">nmap -sS <span class="number">202.100</span><span class="number">.1</span><span class="number">.210</span> </span><br><span class="line">TCP Connect扫描 </span><br><span class="line">nmap -sT <span class="number">202.100</span><span class="number">.1</span><span class="number">.210</span> </span><br><span class="line">TCP FIN 扫描 </span><br><span class="line">nmap -sF <span class="number">202.100</span><span class="number">.1</span><span class="number">.210</span> </span><br><span class="line">UDP 扫描 </span><br><span class="line">nmap -sU <span class="number">202.100</span><span class="number">.1</span><span class="number">.210</span></span><br><span class="line"></span><br></pre></td></tr></tbody></table></figure>
 
@@ -558,25 +571,14 @@
 
 <h2 id="全面综合扫描"><a href="#全面综合扫描" class="headerlink" title="全面综合扫描"></a>全面综合扫描</h2><figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nmap -T4 -A -v <span class="number">202.100</span><span class="number">.1</span><span class="number">.210</span></span><br></pre></td></tr></tbody></table></figure>
 
-<h1 id="Nmap-脚本扫描"><a href="#Nmap-脚本扫描" class="headerlink" title="Nmap 脚本扫描"></a>Nmap 脚本扫描</h1><hr>
-<h2 id=""><a href="#" class="headerlink" title=""></a></h2><ol>
-<li><h2 id="Nmap脚本命令行参数"><a href="#Nmap脚本命令行参数" class="headerlink" title="Nmap脚本命令行参数"></a>Nmap脚本命令行参数</h2></li>
-</ol>
-<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">-sC: 等价于–script=<span class="keyword">default</span>，使用默认类别的脚本进行扫描 可更换其他类别 </span><br><span class="line">–script=&lt;Lua scripts&gt;: &lt;Lua scripts&gt;使用某个或某类脚本进行扫描，支持通配符描述</span><br><span class="line">–script-args=&lt;n1=v1,[n2=v2,...]&gt;: 为脚本提供默认参数 </span><br><span class="line">–script-args-file=filename: 使用文件来为脚本提供参数 </span><br><span class="line">–script-trace: 显示脚本执行过程中发送与接收的数据 </span><br><span class="line">–script-updatedb: 更新脚本数据库 </span><br><span class="line">–script-help=&lt;scripts&gt;: 显示脚本的帮助信息，其中&lt;scripts&gt;部分可以逗号分隔的文件或脚本类别</span><br><span class="line"></span><br></pre></td></tr></tbody></table></figure>
+<h1 id="0x004-Nmap-脚本扫描"><a href="#0x004-Nmap-脚本扫描" class="headerlink" title="0x004 Nmap 脚本扫描"></a>0x004 Nmap 脚本扫描</h1><hr>
+<h2 id="1-Nmap脚本命令行参数"><a href="#1-Nmap脚本命令行参数" class="headerlink" title="1.Nmap脚本命令行参数"></a>1.Nmap脚本命令行参数</h2><figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">-sC: 等价于–script=<span class="keyword">default</span>，使用默认类别的脚本进行扫描 可更换其他类别 </span><br><span class="line">–script=&lt;Lua scripts&gt;: &lt;Lua scripts&gt;使用某个或某类脚本进行扫描，支持通配符描述</span><br><span class="line">–script-args=&lt;n1=v1,[n2=v2,...]&gt;: 为脚本提供默认参数 </span><br><span class="line">–script-args-file=filename: 使用文件来为脚本提供参数 </span><br><span class="line">–script-trace: 显示脚本执行过程中发送与接收的数据 </span><br><span class="line">–script-updatedb: 更新脚本数据库 </span><br><span class="line">–script-help=&lt;scripts&gt;: 显示脚本的帮助信息，其中&lt;scripts&gt;部分可以逗号分隔的文件或脚本类别</span><br><span class="line"></span><br></pre></td></tr></tbody></table></figure>
 
-<ol start="2">
-<li><h2 id="Nmap脚本分类"><a href="#Nmap脚本分类" class="headerlink" title="Nmap脚本分类"></a>Nmap脚本分类</h2><p>Nmap所有脚本文件在<span style="color:orange;">/usr/share/nmap/scripts/</span>目录下，切换到该目录下，然后扫描时可根据需要设置<span style="color:orange;"> – script =</span> 类别这种方式进行比较笼统的扫描。</p>
+<h2 id="2-Nmap脚本分类"><a href="#2-Nmap脚本分类" class="headerlink" title="2.Nmap脚本分类"></a>2.Nmap脚本分类</h2><p>Nmap所有脚本文件在<span style="color:orange;">/usr/share/nmap/scripts/</span>目录下，切换到该目录下，然后扫描时可根据需要设置<span style="color:orange;"> – script =</span> 类别这种方式进行比较笼统的扫描。</p>
 <figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">auth: 负责处理鉴权证书（绕开鉴权）的脚本</span><br><span class="line">broadcast: 在局域网内探查更多服务开启状况，如dhcp/dns/sqlserver等服务 </span><br><span class="line">brute: 提供暴力破解方式，针对常见的应用如http/snmp等 </span><br><span class="line"><span class="keyword">default</span>: 使用-sC或-A选项扫描时候默认的脚本，提供基本脚本扫描能力 </span><br><span class="line">discovery: 对网络进行更多的信息，如SMB枚举、SNMP查询等 </span><br><span class="line">dos: 用于进行拒绝服务攻击 </span><br><span class="line">exploit: 利用已知的漏洞入侵系统 </span><br><span class="line">external: 利用第三方的数据库或资源，例如进行whois解析 </span><br><span class="line">fuzzer: 模糊测试的脚本，发送异常的包到目标机，探测出潜在漏洞 </span><br><span class="line">intrusive: 入侵性的脚本，此类脚本可能引发对方的IDS/IPS的记录或屏蔽 </span><br><span class="line">malware: 探测目标机是否感染了病毒、开启了后门等信息 </span><br><span class="line">safe: 此类与intrusive相反，属于安全性脚本 </span><br><span class="line">version: 负责增强服务与版本扫描（Version Detection）功能的脚本 </span><br><span class="line">vuln: 负责检查目标机是否有常见的漏洞（Vulnerability），如是否有MS08_067</span><br><span class="line"></span><br></pre></td></tr></tbody></table></figure>
 
-
-
-
-
-</li>
-</ol>
-<ol start="3">
-<li><h2 id="部分使用案列"><a href="#部分使用案列" class="headerlink" title="部分使用案列"></a>部分使用案列</h2><p>（1）负责处理鉴权证书（绕开鉴权）的脚本,也可以作为检测部分应用弱口令</p>
-   <figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nmap --script=auth <span class="number">192.168</span><span class="number">.137</span>.*</span><br></pre></td></tr></tbody></table></figure>
+<h2 id="3-部分使用案列"><a href="#3-部分使用案列" class="headerlink" title="3.部分使用案列"></a>3.部分使用案列</h2><p>（1）负责处理鉴权证书（绕开鉴权）的脚本,也可以作为检测部分应用弱口令</p>
+<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nmap --script=auth <span class="number">192.168</span><span class="number">.137</span>.*</span><br></pre></td></tr></tbody></table></figure>
 
 <p>（2）提供暴力破解的方式可对数据库，smb，snmp等进行简单密码的暴力猜解</p>
 <figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nmap --script=brute <span class="number">192.168</span><span class="number">.137</span>.*</span><br></pre></td></tr></tbody></table></figure>
@@ -593,11 +595,7 @@
 <p>（6）利用第三方的数据库或资源，例如进行whois解析</p>
 <figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nmap --script external <span class="number">202.103</span><span class="number">.243</span><span class="number">.110</span> </span><br></pre></td></tr></tbody></table></figure>
 
-
-
-</li>
-</ol>
-<h1 id="Nmap-应用服务扫描"><a href="#Nmap-应用服务扫描" class="headerlink" title="Nmap 应用服务扫描"></a>Nmap 应用服务扫描</h1><hr>
+<h1 id="0x005-Nmap-应用服务扫描"><a href="#0x005-Nmap-应用服务扫描" class="headerlink" title="0x005 Nmap 应用服务扫描"></a>0x005 Nmap 应用服务扫描</h1><hr>
 <h2 id="1-vnc扫描"><a href="#1-vnc扫描" class="headerlink" title="1.vnc扫描"></a>1.vnc扫描</h2><p>检查vnc bypass</p>
 <figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nmap  --script=realvnc-auth-bypass <span class="number">192.168</span><span class="number">.137</span><span class="number">.4</span></span><br></pre></td></tr></tbody></table></figure>
 
@@ -683,12 +681,10 @@
 <figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nmap --script=samba-vuln-cve-<span class="number">2012</span>-<span class="number">1182</span>  -p <span class="number">139</span> <span class="number">192.168</span><span class="number">.137</span><span class="number">.4</span></span><br></pre></td></tr></tbody></table></figure>
 
 <h2 id="7-不靠谱的脚本："><a href="#7-不靠谱的脚本：" class="headerlink" title="7. 不靠谱的脚本："></a>7. 不靠谱的脚本：</h2><ul>
-<li><p><span style="color:orange;">vnc - brute </span> 次数多了会禁止连接</p>
-</li>
-<li><p><span style="color:orange;"> pcanywhere - brute </span> 次数多了会禁止连接</p>
-</li>
+<li><span style="color:orange;">vnc - brute </span> 次数多了会禁止连接</li>
+<li><span style="color:orange;"> pcanywhere - brute </span> 次数多了会禁止连接</li>
 </ul>
-<h1 id="Nmap-高级用法"><a href="#Nmap-高级用法" class="headerlink" title="Nmap 高级用法"></a>Nmap 高级用法</h1><hr>
+<h1 id="0x006-Nmap-高级用法"><a href="#0x006-Nmap-高级用法" class="headerlink" title="0x006 Nmap 高级用法"></a>0x006 Nmap 高级用法</h1><hr>
 <h2 id="1-回顾Nmap简单扫描方式"><a href="#1-回顾Nmap简单扫描方式" class="headerlink" title="1.回顾Nmap简单扫描方式"></a>1.回顾Nmap简单扫描方式</h2><p>​    上述的扫描方式能满足一般的信息搜集需求。而若想利用Nmap探索出特定的场景中更详细的信息，则需仔细地设计Nmap命令行参数，以便精确地控制Nmap的扫描行为。</p>
 <figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">全面扫描：nmap -T4 -A targetip </span><br><span class="line">主机发现：nmap -T4 -sn targetip </span><br><span class="line">端口扫描：nmap -T4 targetip </span><br><span class="line">服务扫描：nmap -T4 -sV targetip </span><br><span class="line">操作系统扫描：nmap -T4 -O targetip</span><br></pre></td></tr></tbody></table></figure>
 
@@ -714,7 +710,7 @@
 <li><span style="color:orange;">–spoof-mac</span>指定使用欺骗的MAC地址</li>
 <li><span style="color:orange;">–TTL</span>指定生存时间。</li>
 </ul>
-<h1 id="扫描防火墙"><a href="#扫描防火墙" class="headerlink" title="扫描防火墙"></a>扫描防火墙</h1><hr>
+<h1 id="0x007-扫描防火墙"><a href="#0x007-扫描防火墙" class="headerlink" title="0x007 扫描防火墙"></a>0x007 扫描防火墙</h1><hr>
 <p>  防火墙在今天网络安全中扮演着重要的角色，如果能对防火墙系统进行详细的探测，那么绕开防火墙或渗透防火墙就更加容易。所以，此处讲解利用Nmap获取防火墙基本信息典型的用法。</p>
 <p>  为了获取防火墙全面的信息，需尽可能多地结合不同扫描方式来探测其状态。在设计命令行参数时，可以综合网络环境来微调时序参数，以便加快扫描速度。<br>SYN扫描</p>
 <p>  首先可以利用基本的SYN扫描方式探测其端口开放状态。</p>
@@ -747,7 +743,8 @@
 <figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">PORT    STATE    SERVICE </span><br><span class="line"><span class="number">7</span>/tcp   open     echo </span><br><span class="line"><span class="number">9</span>/tcp   open     discard</span><br><span class="line"><span class="number">11</span>/tcp  open     systat </span><br><span class="line"><span class="number">13</span>/tcp  open     daytime</span><br><span class="line">更多端口，此处省略</span><br><span class="line"></span><br></pre></td></tr></tbody></table></figure>
 
 <p>​    在采用多种方式获取出防火墙状态后，可以进一步进行应用程序与版本侦测及OS侦测，此处不再赘述！</p>
-<h1 id="扫描路由器"><a href="#扫描路由器" class="headerlink" title="扫描路由器"></a>扫描路由器</h1><p> Nmap内部维护了一份系统与设备的数据库（<code>nmap-os-db</code>），能够识别数千种不同系统与设备。所以，可以用来扫描主流的路由器设备。</p>
+<h1 id="0x008-扫描路由器"><a href="#0x008-扫描路由器" class="headerlink" title="0x008 扫描路由器"></a>0x008 扫描路由器</h1><hr>
+<p> Nmap内部维护了一份系统与设备的数据库（<code>nmap-os-db</code>），能够识别数千种不同系统与设备。所以，可以用来扫描主流的路由器设备。</p>
 <h2 id="1-扫描思科路由器"><a href="#1-扫描思科路由器" class="headerlink" title="1.扫描思科路由器"></a>1.扫描思科路由器</h2><figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nmap -p1-<span class="number">25</span>,<span class="number">80</span>,<span class="number">512</span>-<span class="number">515</span>,<span class="number">2001</span>,<span class="number">4001</span>,<span class="number">6001</span>,<span class="number">9001</span> <span class="number">10.20</span><span class="number">.0</span><span class="number">.1</span>/<span class="number">16</span></span><br></pre></td></tr></tbody></table></figure>
 
 <p>​    思科路由器会在上述端口中运行了常见的服务。列举出上述端口开放的主机，可以定位到路由器设备可能的IP地址及端口状态。</p>
@@ -757,7 +754,7 @@
 <h2 id="3-扫描路由器操作系统"><a href="#3-扫描路由器操作系统" class="headerlink" title="3.扫描路由器操作系统"></a>3.扫描路由器操作系统</h2><figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nmap -O -F -n <span class="number">192.168</span><span class="number">.1</span><span class="number">.1</span></span><br></pre></td></tr></tbody></table></figure>
 
 <p> 与通用PC扫描方式类似，使用<span style="color:orange;">-O</span>选项扫描路由器的操作系统。<span style="color:orange;">-F</span>用于快速扫描最可能开放的100个端口，并根据端口扫描结果进一步做OS的指纹分析。</p>
-<h1 id="扫描物联网"><a href="#扫描物联网" class="headerlink" title="扫描物联网"></a>扫描物联网</h1><hr>
+<h1 id="0x009-扫描互联网"><a href="#0x009-扫描互联网" class="headerlink" title="0x009 扫描互联网"></a>0x009 扫描互联网</h1><hr>
 <p>  Nmap内部的设计非常强大灵活，既能扫描单个主机、小型的局域网，也可以扫描成千上万台主机从中发掘用户关注的信息。扫描大量主机，需要对扫描时序等参数进行仔细的优化。</p>
 <h2 id="1-发现互联网上web服务器"><a href="#1-发现互联网上web服务器" class="headerlink" title="1.发现互联网上web服务器"></a>1.发现互联网上web服务器</h2><figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nmap -iR <span class="number">100000</span> -sS -PS80 -p <span class="number">80</span> -oG nmap.txt</span><br></pre></td></tr></tbody></table></figure>
 
@@ -793,7 +790,7 @@
 <p>最有可能开放的10个UDP端口。</p>
 <figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">137</span> (netbios-ns) </span><br><span class="line"><span class="number">161</span> (snmp) </span><br><span class="line"><span class="number">1434</span> (ms-sql-m) </span><br><span class="line"><span class="number">123</span> (ntp) </span><br><span class="line"><span class="number">138</span> (netbios-dgm) </span><br><span class="line"><span class="number">445</span> (microsoft-ds) </span><br><span class="line"><span class="number">135</span> (msrpc) </span><br><span class="line"><span class="number">67</span> (dhcps)</span><br><span class="line"><span class="number">139</span> (netbios-ssn) </span><br><span class="line"><span class="number">53</span> (domain)</span><br></pre></td></tr></tbody></table></figure>
 
-<h1 id="扫描Web站点"><a href="#扫描Web站点" class="headerlink" title="扫描Web站点"></a>扫描Web站点</h1><hr>
+<h1 id="0x010-扫描Web站点"><a href="#0x010-扫描Web站点" class="headerlink" title="0x010 扫描Web站点"></a>0x010 扫描Web站点</h1><hr>
 <p>  Web是互联网上最广泛的应用，而且越来越多的服务倾向于以Web形式提供出来，所以对Web安全监管也越来越重要。目前安全领域有很多专门的Web扫描软件（如AppScan、WebInspect、W3AF），能够提供端口扫描、漏洞扫描、漏洞利用、分析报表等诸多功能。而Nmap作为一款开源的端口扫描器，对Web扫描方面支持也越来越强大，可以完成Web基本的信息探测：服务器版本、支持的Method、是否包含典型漏洞。功能已经远远超过同领域的其他开源软件，如HTTPrint、Httsquash。</p>
 <p>  目前Nmap中对Web的支持主要通过Lua脚本来实现，NSE脚本库中共有50多个HTTP相关的脚本。</p>
 <p>　　扫描实例：</p>
@@ -804,7 +801,7 @@
 <p>​        然后搜出了该站点的==affiliate-id:==该ID可用于识别同一拥有者的不同页面。</p>
 <p>  然后输出==HTTP-headers==信息，从中查看到基本配置信息。</p>
 <p>  从==http-title==中，可以看到网页标题。某些网页标题可能会泄漏重要信息，所以这里也应对其检查。</p>
-<h1 id="Python-Nmap"><a href="#Python-Nmap" class="headerlink" title="Python Nmap"></a>Python Nmap</h1><hr>
+<h1 id="0x011-Python-Nmap"><a href="#0x011-Python-Nmap" class="headerlink" title="0x011 Python Nmap"></a>0x011 Python Nmap</h1><hr>
 <p><strong>Python 安装 Nmap</strong></p>
 <figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip3 install python-nmap</span><br></pre></td></tr></tbody></table></figure>
 
@@ -825,6 +822,12 @@
 <blockquote>
 <p><a target="_blank" rel="noopener" href="http://xael.org/pages/python-nmap-en.html">Python Nmap更多用法</a></p>
 </blockquote>
+<h1 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h1><hr>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://blog.csdn.net/aspirationflow/article/details/7983368">https://blog.csdn.net/aspirationflow/article/details/7983368</a></li>
+<li><a target="_blank" rel="noopener" href="http://xael.org/pages/python-nmap-en.html">http://xael.org/pages/python-nmap-en.html</a></li>
+<li><a target="_blank" rel="noopener" href="http://www.91ri.org/3550.html">http://www.91ri.org/3550.html</a></li>
+</ul>
 
                 
             </div>
@@ -888,7 +891,11 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/Nmap/">
+                                    <span class="chip bg-color">Nmap</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -1036,33 +1043,6 @@
             
         </div>
     </div>
-
-    
-        <link rel="stylesheet" href="/libs/gitalk/gitalk.css">
-<link rel="stylesheet" href="/css/my-gitalk.css">
-
-<div class="card gitalk-card" data-aos="fade-up">
-    <div class="comment_headling" style="font-size: 20px; font-weight: 700; position: relative; padding-left: 20px; top: 15px; padding-bottom: 5px;">
-        <i class="fas fa-comments fa-fw" aria-hidden="true"></i>
-        <span>评论</span>
-    </div>
-    <div id="gitalk-container" class="card-content"></div>
-</div>
-
-<script src="/libs/gitalk/gitalk.min.js"></script>
-<script>
-    let gitalk = new Gitalk({
-        clientID: '',
-        clientSecret: '',
-        repo: '',
-        owner: '',
-        admin: null,
-        id: '2021-01-05T21-28-10',
-        distractionFreeMode: false  // Facebook-like distraction free mode
-    });
-
-    gitalk.render('gitalk-container');
-</script>
 
     
 
@@ -1354,8 +1334,7 @@
                 <a href="/2021/01/05/nmap-shi-yong-zhi-nan/">
                     <div class="card-image">
                         
-                        
-                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="Nmap使用指南">
+                        <img src="/medias/featureimages/33.jpg" class="responsive-img" alt="Nmap使用指南">
                         
                         <span class="card-title">Nmap使用指南</span>
                     </div>
@@ -1372,13 +1351,25 @@
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            Hcn
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/" class="post-category">
+                                    实用工具
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
 
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Nmap/">
+                        <span class="chip bg-color">Nmap</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
@@ -1426,6 +1417,43 @@
 </div>
 
 
+<script>
+    $('#articleContent').on('copy', function (e) {
+        // IE8 or earlier browser is 'undefined'
+        if (typeof window.getSelection === 'undefined') return;
+
+        var selection = window.getSelection();
+        // if the selection is short let's not annoy our users.
+        if (('' + selection).length < Number.parseInt('120')) {
+            return;
+        }
+
+        // create a div outside of the visible area and fill it with the selected text.
+        var bodyElement = document.getElementsByTagName('body')[0];
+        var newdiv = document.createElement('div');
+        newdiv.style.position = 'absolute';
+        newdiv.style.left = '-99999px';
+        bodyElement.appendChild(newdiv);
+        newdiv.appendChild(selection.getRangeAt(0).cloneContents());
+
+        // we need a <pre> tag workaround.
+        // otherwise the text inside "pre" loses all the line breaks!
+        if (selection.getRangeAt(0).commonAncestorContainer.nodeName === 'PRE') {
+            newdiv.innerHTML = "<pre>" + newdiv.innerHTML + "</pre>";
+        }
+
+        var url = document.location.href;
+        newdiv.innerHTML += '<br />'
+            + '来源: Hcn<br />'
+            + '文章作者: Hcn<br />'
+            + '文章链接: <a href="' + url + '">' + url + '</a><br />'
+            + '本文章著作权归作者所有，任何形式的转载都请注明出处。';
+
+        selection.selectAllChildren(newdiv);
+        window.setTimeout(function () {bodyElement.removeChild(newdiv);}, 200);
+    });
+</script>
+
 
 <!-- 代码块功能依赖 -->
 <script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
@@ -1471,7 +1499,7 @@
             contentSelector: '#articleContent',
             headingsOffset: -($(window).height() * 0.4 - 45),
             collapseDepth: Number('0'),
-            headingSelector: 'h2, h3, h4'
+            headingSelector: 'h1, h2, h3，h4'
         });
 
         // modify the toc link href to support Chinese.
@@ -1483,7 +1511,7 @@
 
         // modify the heading title id to support Chinese.
         i = 0;
-        $('#articleContent').children('h2, h3, h4').each(function () {
+        $('#articleContent').children('h1, h2, h3，h4').each(function () {
             $(this).attr('id', tocHeading + (++i));
         });
 
@@ -1548,7 +1576,7 @@
 
     <footer class="page-footer bg-color">
     
-    <div class="container row center-align" style="margin-bottom: 0px !important;">
+    <div class="container row center-align" style="margin-bottom: 15px !important;">
         <div class="col s12 m8 l8 copy-right">
             Copyright&nbsp;&copy;
             
@@ -1579,6 +1607,50 @@
             
 
             <br>
+            
+            <span id="sitetime">载入运行时间...</span>
+            <script>
+                function siteTime() {
+                    var seconds = 1000;
+                    var minutes = seconds * 60;
+                    var hours = minutes * 60;
+                    var days = hours * 24;
+                    var years = days * 365;
+                    var today = new Date();
+                    var startYear = "2020";
+                    var startMonth = "12";
+                    var startDate = "11";
+                    var startHour = "0";
+                    var startMinute = "0";
+                    var startSecond = "0";
+                    var todayYear = today.getFullYear();
+                    var todayMonth = today.getMonth() + 1;
+                    var todayDate = today.getDate();
+                    var todayHour = today.getHours();
+                    var todayMinute = today.getMinutes();
+                    var todaySecond = today.getSeconds();
+                    var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
+                    var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+                    var diff = t2 - t1;
+                    var diffYears = Math.floor(diff / years);
+                    var diffDays = Math.floor((diff / days) - diffYears * 365);
+                    var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours);
+                    var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) /
+                        minutes);
+                    var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours -
+                        diffMinutes * minutes) / seconds);
+                    if (startYear == todayYear) {
+                        document.getElementById("year").innerHTML = todayYear;
+                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffDays + " 天 " + diffHours +
+                            " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    } else {
+                        document.getElementById("year").innerHTML = startYear + " - " + todayYear;
+                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffYears + " 年 " + diffDays +
+                            " 天 " + diffHours + " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    }
+                }
+                setInterval(siteTime, 1000);
+            </script>
             
             <br>
             
@@ -1761,8 +1833,6 @@ $(function () {
 </script>
 
     
-    <script src="/libs/others/clicklove.js" async="async"></script>
-    
     
     <script async src="/libs/others/busuanzi.pure.mini.js"></script>
     
@@ -1777,6 +1847,8 @@ $(function () {
 
     
 
+    
+    <script type="text/javascript" src="/libs/background/ribbon-dynamic.js" async="async"></script>
     
 
     
