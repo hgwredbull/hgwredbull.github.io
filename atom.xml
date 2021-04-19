@@ -45,24 +45,39 @@
   </entry>
   
   <entry>
-    <title>实践二</title>
-    <link href="http://hgwredbull.github.io/2020/12/13/shi-jian-er/"/>
-    <id>http://hgwredbull.github.io/2020/12/13/shi-jian-er/</id>
+    <title>CSS基础入门</title>
+    <link href="http://hgwredbull.github.io/2020/12/13/css-ji-chu-ru-men/"/>
+    <id>http://hgwredbull.github.io/2020/12/13/css-ji-chu-ru-men/</id>
     <published>2020-12-13T14:36:59.000Z</published>
-    <updated>2020-12-17T06:15:07.705Z</updated>
+    <updated>2021-04-19T05:48:05.018Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;1、什么是CSS&quot;&gt;&lt;a href=&quot;#1、什么是CSS&quot; class=&quot;headerlink&quot; title=&quot;1、什么是CSS&quot;&gt;&lt;/a&gt;1、什么是CSS&lt;/h1&gt;&lt;hr&gt;
+&lt;h2 id=&quot;如何学习&quot;&gt;&lt;a href=&quot;#如何学习&quot;</summary>
+        
+      
     
     
     
+    <category term="实用工具" scheme="http://hgwredbull.github.io/categories/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/"/>
     
+    
+    <category term="HTML" scheme="http://hgwredbull.github.io/tags/HTML/"/>
+    
+    <category term="css" scheme="http://hgwredbull.github.io/tags/css/"/>
     
   </entry>
   
   <entry>
-    <title>实践</title>
-    <link href="http://hgwredbull.github.io/2020/12/13/shi-jian/"/>
-    <id>http://hgwredbull.github.io/2020/12/13/shi-jian/</id>
+    <title>适合新手的CTF靶场集合</title>
+    <link href="http://hgwredbull.github.io/2020/12/13/gua-he-xin-shou-de-ctf-ba-chang-ji-he/"/>
+    <id>http://hgwredbull.github.io/2020/12/13/gua-he-xin-shou-de-ctf-ba-chang-ji-he/</id>
     <published>2020-12-13T13:57:49.000Z</published>
-    <updated>2021-01-06T17:59:00.145Z</updated>
+    <updated>2021-04-19T08:07:18.298Z</updated>
     
     
       
@@ -85,15 +100,29 @@
   </entry>
   
   <entry>
-    <title>我的第一篇博客文章</title>
-    <link href="http://hgwredbull.github.io/2020/12/09/wo-de-di-yi-pian-bo-ke-wen-zhang/"/>
-    <id>http://hgwredbull.github.io/2020/12/09/wo-de-di-yi-pian-bo-ke-wen-zhang/</id>
+    <title>渗透测试之信息收集</title>
+    <link href="http://hgwredbull.github.io/2020/12/09/shen-tou-ce-shi-zhi-xin-xi-shou-ji/"/>
+    <id>http://hgwredbull.github.io/2020/12/09/shen-tou-ce-shi-zhi-xin-xi-shou-ji/</id>
     <published>2020-12-09T10:39:29.000Z</published>
-    <updated>2020-12-17T06:15:07.706Z</updated>
+    <updated>2021-04-19T08:03:33.920Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;part-1-信息搜集阶段&quot;&gt;&lt;a href=&quot;#part-1-信息搜集阶段&quot; class=&quot;headerlink&quot; title=&quot;part 1 信息搜集阶段&quot;&gt;&lt;/a&gt;part 1 信息搜集阶段&lt;/h1&gt;&lt;p&gt;​   </summary>
+        
+      
     
     
     
+    <category term="实用工具" scheme="http://hgwredbull.github.io/categories/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/"/>
     
+    
+    <category term="网络渗透" scheme="http://hgwredbull.github.io/tags/%E7%BD%91%E7%BB%9C%E6%B8%97%E9%80%8F/"/>
+    
+    <category term="搜集" scheme="http://hgwredbull.github.io/tags/%E6%90%9C%E9%9B%86/"/>
     
   </entry>
   

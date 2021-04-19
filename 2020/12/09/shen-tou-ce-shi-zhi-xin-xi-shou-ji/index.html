@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="实践二, python,linux,网络安全，渗透测试，网络基本知识">
+    <meta name="keywords" content="渗透测试之信息收集, python,linux,网络安全，渗透测试，网络基本知识">
     <meta name="description" content="专注于分享知识。|网络安全|">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>实践二 | Hcn</title>
+    <title>渗透测试之信息收集 | Hcn</title>
     <link rel="icon" type="image/png" href="/redbull.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -361,12 +361,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/13.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/34.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">实践二</h1>
+                    <h1 class="description center-align post-title">渗透测试之信息收集</h1>
                 </div>
             </div>
         </div>
@@ -480,12 +480,29 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/%E7%BD%91%E7%BB%9C%E6%B8%97%E9%80%8F/">
+                                <span class="chip bg-color">网络渗透</span>
+                            </a>
+                        
+                            <a href="/tags/%E6%90%9C%E9%9B%86/">
+                                <span class="chip bg-color">搜集</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/" class="post-category">
+                                实用工具
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -494,7 +511,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-12-13
+                    2020-12-09
                 </div>
                 
 
@@ -503,14 +520,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    0
+                    4.4k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    17 分
                 </div>
                 
 
@@ -530,7 +547,242 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                
+                <h1 id="part-1-信息搜集阶段"><a href="#part-1-信息搜集阶段" class="headerlink" title="part 1 信息搜集阶段"></a>part 1 信息搜集阶段</h1><p>​    渗透测试者可以使用的信息收集方法包括公开来的源信息查询、Google Hacking、社会工程学、网络踩点、扫描探测、被动监听、服务查点等。而对目标系统的情报探查能力是渗透测试者一项非常重要的技能，信息搜集是否充分在很大程度上决定了渗透测试的成败，因为如果你遗漏关键的情报信息，你将可能在后面的阶段里一无所获。</p>
+<hr>
+<h1 id="part-2-域名"><a href="#part-2-域名" class="headerlink" title="part 2 域名"></a>part 2 域名</h1><h2 id="2-1Whois查询"><a href="#2-1Whois查询" class="headerlink" title="2.1Whois查询"></a>2.1Whois查询</h2><p>Whois是一个用来查询域名是否已经被注册，以及注册域名的详细信息的数据库（如域名所有人、域名注册商、域名注册日期和过期日期等）。通过域名Whois服务器查询，可以查询域名归属者联系方式，以及注册和到期时间。</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="http://whois.chinaz.com/">http://whois.chinaz.com/</a></li>
+</ul>
+<h2 id="2-2-子域名爆破"><a href="#2-2-子域名爆破" class="headerlink" title="2.2 子域名爆破"></a>2.2 子域名爆破</h2><h3 id="2-2-1-域传送漏洞"><a href="#2-2-1-域传送漏洞" class="headerlink" title="2.2.1 域传送漏洞"></a>2.2.1 域传送漏洞</h3><h4 id="方法一：-利用nmap检测域传送漏洞，如果存在漏洞将有大量域名信息显示。"><a href="#方法一：-利用nmap检测域传送漏洞，如果存在漏洞将有大量域名信息显示。" class="headerlink" title="方法一： 利用nmap检测域传送漏洞，如果存在漏洞将有大量域名信息显示。"></a>方法一： 利用nmap检测域传送漏洞，如果存在漏洞将有大量域名信息显示。</h4><figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">nmap --script dns-zone-transfer --script-args dns-zone-transfer.domain=nwpu.edu.cn -p <span class="number">53</span> -Pn dns.nwpu.edu.cn</span><br><span class="line">参数： </span><br><span class="line">–-script：表示加载nmap文件夹下的脚本 </span><br><span class="line">–-script-args： 向脚本传递参数 </span><br><span class="line">-p：设置扫描端口 </span><br><span class="line">-Pn：设置通过Ping发现主机是否存活</span><br><span class="line"></span><br></pre></td></tr></tbody></table></figure>
+
+<h4 id="方法二：-利用Kail下面的Dnsenum检测该漏洞"><a href="#方法二：-利用Kail下面的Dnsenum检测该漏洞" class="headerlink" title="方法二： 利用Kail下面的Dnsenum检测该漏洞"></a><strong>方法二：</strong> 利用Kail下面的Dnsenum检测该漏洞</h4><figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">dnsenum --<span class="class"><span class="keyword">enum</span> <span class="title">domain</span>.<span class="title">com</span></span></span><br></pre></td></tr></tbody></table></figure>
+
+<h4 id="方法三：-利用nslookup检测域传送漏洞"><a href="#方法三：-利用nslookup检测域传送漏洞" class="headerlink" title="方法三： 利用nslookup检测域传送漏洞"></a><strong>方法三：</strong> 利用nslookup检测域传送漏洞</h4><figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nslookup -type=ns  地址   查询dns服务器</span><br></pre></td></tr></tbody></table></figure>
+
+
+
+<blockquote>
+<p><span style="color:orange;">详细操作，点击查看</span> [域传送漏洞][<a target="_blank" rel="noopener" href="http://www.lijiejie.com/dns-zone-transfer-1/]">http://www.lijiejie.com/dns-zone-transfer-1/]</a></p>
+</blockquote>
+<h3 id="2-2-2-工具使用"><a href="#2-2-2-工具使用" class="headerlink" title="2.2.2 工具使用"></a>2.2.2 工具使用</h3><p><strong>dnsenum (kali)</strong></p>
+<p>dnsenum的目的是尽可能收集一个域的信息，它能够通过谷歌或者字典文件猜测可能存在的域名，以及对一个网段进行反向查询。它可以查询网站的主机地址信息、域名服务器、mx record（函件交换记录），在域名服务器上执行axfr请求，通过谷歌脚本得到扩展域名信息（google hacking），提取自域名并查询，计算C类地址并执行whois查询，执行反向查询，把地址段写入文件。</p>
+<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">使用：dnsenum baidu.com -f /usr/share/dnsenum/dns.txt -dnsserver <span class="number">8.8</span><span class="number">.8</span><span class="number">.8</span></span><br><span class="line">参数：</span><br><span class="line">-f 指定爆破字典</span><br><span class="line">-dnsserver 指定要使用的dns；若不设置，则采用默认的dns</span><br></pre></td></tr></tbody></table></figure>
+
+<p><strong>layer 子域名挖掘机</strong></p>
+<p>Layer子域名挖掘机是一款域名查询工具，可提供网站子域名查询服务；拥有简洁的界面、简单的操作模式，支持服务接口、暴力搜索、同服挖掘三种模式，支持打开网站、复制域名、复制IP、复制CDN、导出域名、导出IP、导出域名+IP、导出域名+IP+WEB服务器以及导出存活网站！<br>处。</p>
+<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">下载：https:<span class="comment">//pan.baidu.com/s/1_N8nHLOr_hkRRgjMLb0o2Q</span></span><br><span class="line">提取码：bsvu</span><br></pre></td></tr></tbody></table></figure>
+
+<p><strong>subDomainsBrute</strong></p>
+<p>SubDomainsBrute用于测试者的快速子域粗暴工具，本工具用于渗透测试目标域名收集。高并发DNS暴力枚举，发现其他工具无法探测到的域名，如Google，aizhan，fofa。</p>
+<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">环境：pip install dnspython gevent # python2.7 </span><br><span class="line">下载：https:<span class="comment">//www.freebuf.com/sectool/106625.html </span></span><br><span class="line">使用：python subDomainsBrute.py -t <span class="number">10</span> qq.com -o qq.com.txt</span><br><span class="line">参数： </span><br><span class="line">-t 线程数 </span><br><span class="line">-o 指定保存的文件名</span><br><span class="line"></span><br></pre></td></tr></tbody></table></figure>
+
+<p><strong>wydomain</strong></p>
+<p>wydomain是猪猪侠开发的一款子域名信息搜集工具，因其枚举速度快，结果准确，成为不少白帽居家旅行的必备神器。</p>
+<p>工具主要分为两个模块，dnsburte模块和wydomain模块：</p>
+<ul>
+<li>dnsburte模块通过用户自定义字典发送dns查询，最后筛选出符合条件的域名。</li>
+<li>wydomain模块则是通过调用多个第三方网站的公开api获取子域名数据。</li>
+</ul>
+<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">下载：git clone https:<span class="comment">//github.com/ring04h/wydomain.git </span></span><br><span class="line">使用：python dnsburte.py -d qq.com -t <span class="number">10</span> -f wydomain.csv -o qq.com.txt </span><br><span class="line">参数： </span><br><span class="line">-d 指定目标域名 </span><br><span class="line">-f 指定的字典，默认是<span class="keyword">default</span>.csv </span><br><span class="line">-o 指定保存的文件名，若不指定，默认保存在./result/目录下 </span><br><span class="line">-t 指定线程数</span><br></pre></td></tr></tbody></table></figure>
+
+<p><strong>在线子域名挖掘</strong></p>
+<ul>
+<li><a target="_blank" rel="noopener" href="http://z.zcjun.com/">http://z.zcjun.com/</a></li>
+<li><a target="_blank" rel="noopener" href="https://phpinfo.me/domain/">https://phpinfo.me/domain/</a></li>
+</ul>
+<h2 id="2-3-绕过CDN，找真实IP"><a href="#2-3-绕过CDN，找真实IP" class="headerlink" title="2.3 绕过CDN，找真实IP"></a>2.3 绕过CDN，找真实IP</h2><h3 id="2-3-1-判断是否CDN"><a href="#2-3-1-判断是否CDN" class="headerlink" title="2.3.1 判断是否CDN"></a>2.3.1 判断是否CDN</h3><p>使用各种多地 ping 的服务，查看对应 IP 地址是否唯一，如果不唯一，则很有可能是使用了CDN ，相关查询网站有以下几个：</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="http://ping.chinaz.com/">http://ping.chinaz.com/</a></li>
+<li><a target="_blank" rel="noopener" href="http://ping.aizhan.com/">http://ping.aizhan.com/</a></li>
+<li><a target="_blank" rel="noopener" href="http://ce.cloud.360.cn/">http://ce.cloud.360.cn/</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.17ce.com/">https://www.17ce.com/</a></li>
+</ul>
+<h3 id="2-3-2查询历史CDN记录"><a href="#2-3-2查询历史CDN记录" class="headerlink" title="2.3.2查询历史CDN记录"></a>2.3.2查询历史CDN记录</h3><p>查看IP与域名绑定的历史记录，可能会存在使用CDN之前的记录，相关查询网站有以下几个：</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://dnsdb.io/zh-cn/">https://dnsdb.io/zh-cn/</a></li>
+<li><a target="_blank" rel="noopener" href="https://x.threatbook.cn/">https://x.threatbook.cn/</a></li>
+<li><a target="_blank" rel="noopener" href="https://toolbar.netcraft.com/site_report?url=">https://toolbar.netcraft.com/site_report?url=</a></li>
+<li><a target="_blank" rel="noopener" href="http://viewdns.info/">http://viewdns.info/</a></li>
+</ul>
+<h3 id="2-3-3-查询子域名"><a href="#2-3-3-查询子域名" class="headerlink" title="2.3.3 查询子域名"></a>2.3.3 查询子域名</h3><p>毕竟CDN也是不便宜的，所以很多站长可能只会对主站或者流量大的子站点做了CDN，而很多小站子站点又跟主站在同一个服务器或者一个C段内，此时就可以通过查询子域名对应的IP来辅助查找网站的真实IP。</p>
+<h3 id="2-3-4-让服务器主动连接我们"><a href="#2-3-4-让服务器主动连接我们" class="headerlink" title="2.3.4 让服务器主动连接我们"></a>2.3.4 让服务器主动连接我们</h3><p>目的是让服务器主动连接我们，可利用XSS盲打，命令反弹shell，SSRF等漏洞。或者是通过RSS邮件订阅，很多网站都自带sendmail功能，会发邮件给我们，此时查看邮件原文里的内容就会包含网站的真实IP了。</p>
+<p>以QQ邮箱为例</p>
+<p>首先打开一封邮箱，点击显示邮件原文</p>
+<p><img src="https://s1.ax1x.com/2020/05/10/Y85hFg.png" alt="image"><br>                                                    <strong><u>image</u></strong></p>
+<p>找到Received对应的内容，包含真实IP地址</p>
+<p><img src="https://s1.ax1x.com/2020/05/10/Y85UeK.png" alt="image"></p>
+<p>​                                                    <strong><u>image</u></strong></p>
+<h3 id="2-3-5使用国外主机解析域名"><a href="#2-3-5使用国外主机解析域名" class="headerlink" title="2.3.5使用国外主机解析域名"></a>2.3.5使用国外主机解析域名</h3><p>国内很多CDN厂商因为各种原因只做了国内的线路，而针对国外的线路可能几乎没有，此时我们使用国外的主机直接访问就有可能获取到真实IP，也可以使用在线的多地ping网站筛选出国外对该目标的解析地址是否唯一来判断真实IP。</p>
+<h3 id="2-3-6目标敏感文件泄露"><a href="#2-3-6目标敏感文件泄露" class="headerlink" title="2.3.6目标敏感文件泄露"></a>2.3.6目标敏感文件泄露</h3><p>可能目标服务器上存在一些敏感文件的泄露会直接告诉我们真实IP，比如phpinfo之类的探针文件。</p>
+<h3 id="2-3-7-目标全网扫描"><a href="#2-3-7-目标全网扫描" class="headerlink" title="2.3.7 目标全网扫描"></a>2.3.7 目标全网扫描</h3><p>这种方法对小网站比较有效果，利用Zmap对目标进行全网扫描，大概一个多小时时间，扫描完成后会出现一些IP，甚至非常多个IP，将这些IP利用本地hosts文件进行一一绑定测试，如果能正常访问目标网站，则为真实IP。</p>
+<h3 id="2-3-8-SSL证书查询"><a href="#2-3-8-SSL证书查询" class="headerlink" title="2.3.8 SSL证书查询"></a>2.3.8 SSL证书查询</h3><ol>
+<li>查询地址：<a target="_blank" rel="noopener" href="https://censys.io/">https://censys.io/</a></li>
+<li>search选择：Certificates</li>
+<li>搜索语法：parsed.names:test.com and tags.raw:trusted</li>
+<li>点开目标信息后，点击右边Explore按钮，点击IPv4 Hosts即可</li>
+</ol>
+<h3 id="2-3-9-CDN-工具"><a href="#2-3-9-CDN-工具" class="headerlink" title="2.3.9 CDN 工具"></a>2.3.9 CDN 工具</h3><ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/boy-hack/w8fuckcdn">https://github.com/boy-hack/w8fuckcdn</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/Tai7sy/fuckcdn">https://github.com/Tai7sy/fuckcdn</a></li>
+</ul>
+<h3 id="2-3-10-更多绕过CDN方法"><a href="#2-3-10-更多绕过CDN方法" class="headerlink" title="2.3.10 更多绕过CDN方法"></a>2.3.10 更多绕过CDN方法</h3><ul>
+<li><a target="_blank" rel="noopener" href="https://www.cnblogs.com/nongchaoer/p/12055362.html">绕过CDN查找真实IP方法总结</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.fujieace.com/penetration-test/cdn-find-ip.html">绕过CDN查询真实IP（有效）方法</a></li>
+<li><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_36119192/article/details/89151336">绕过CDN查找网站真实IP</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/30114049">绕过CDN找到真实IP的一些方法</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.cnblogs.com/qiudabai/p/9763739.html">11种绕过CDN查找真实IP方法</a></li>
+</ul>
+<h1 id="part-3-搜索引擎"><a href="#part-3-搜索引擎" class="headerlink" title="part 3 搜索引擎"></a>part 3 搜索引擎</h1><h2 id="3-1-常用引擎"><a href="#3-1-常用引擎" class="headerlink" title="3.1 常用引擎"></a>3.1 常用引擎</h2><ul>
+<li>google.com</li>
+<li>bing.cn</li>
+<li>sogou.com</li>
+<li>baidu.com</li>
+</ul>
+<h2 id="3-2-theHarvester"><a href="#3-2-theHarvester" class="headerlink" title="3.2 theHarvester"></a>3.2 theHarvester</h2><p>TheHarvester能够收集电子邮件账号、用户名、主机名和子域名等信息。它通过Google、Bing、PGP、LinkedIn、Baidu、Yandex、People123、Jigsaw、Shodan等公开资源整理收集这些信息。这些信息将在后期的渗透测试阶段发挥巨大的作用。</p>
+<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">环境：python3 -m pip3 install pipenv uvloop # python3 </span><br><span class="line">下载<span class="number">1</span> https:<span class="comment">//github.com/laramies/theHarvester/tree/master </span></span><br><span class="line">下载<span class="number">2</span>：apt-get install theHarvester </span><br><span class="line">例子：从百度搜索引擎中的前<span class="number">200</span>项搜索结果中挖掘目标域里的电子邮件地址和主机名</span><br><span class="line">使用<span class="number">1</span>：python3 theHarvester.py -d qq.com -l <span class="number">200</span> -b baidu 使用<span class="number">2</span>：theharvester -d qq.com -l <span class="number">200</span> -b baidu</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="3-3-Google-Hacker语法"><a href="#3-3-Google-Hacker语法" class="headerlink" title="3.3 Google Hacker语法"></a>3.3 Google Hacker语法</h2><p>搜索敏感文件</p>
+<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">site:xxx.com filetype:doc intext:pass site:xxx.com filetype:xls intext:pass site:xxx.com filetype:conf site:xxx.com filetype:inc</span><br></pre></td></tr></tbody></table></figure>
+
+<p>搜索管理后台</p>
+<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">site:xxx.com 管理</span><br><span class="line">site:xxx.com admin</span><br><span class="line">site:xxx.com login</span><br></pre></td></tr></tbody></table></figure>
+
+<p>搜索mail</p>
+<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">site:xxx.com intext:<span class="meta">@xxx</span>.com</span><br><span class="line">intext:<span class="meta">@xxx</span>.com</span><br></pre></td></tr></tbody></table></figure>
+
+<p>搜索敏感web路径</p>
+<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">site:xxx.com intitle:mongod inurl:<span class="number">28017</span></span><br><span class="line">site:xxx.com inurl:sql.php</span><br><span class="line">site:xxx.com inurl:phpinfo()</span><br></pre></td></tr></tbody></table></figure>
+
+<blockquote>
+<p><span style="color:orange;">详细操作，点击查看</span> [Google&nbsp;Hacker语法手册][<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/23208883]">https://zhuanlan.zhihu.com/p/23208883]</a> </p>
+</blockquote>
+<h2 id="3-4-网络组件搜索"><a href="#3-4-网络组件搜索" class="headerlink" title="3.4 网络组件搜索"></a>3.4 网络组件搜索</h2><ul>
+<li><a target="_blank" rel="noopener" href="http://www.shodan.io/">www.shodan.io</a></li>
+<li><a target="_blank" rel="noopener" href="http://www.zoomeye.org/">www.zoomeye.org</a></li>
+<li><a target="_blank" rel="noopener" href="http://www.fofa.so/">www.fofa.so</a></li>
+</ul>
+<h1 id="part-4-旁站和C段扫描"><a href="#part-4-旁站和C段扫描" class="headerlink" title="part 4 旁站和C段扫描"></a>part 4 旁站和C段扫描</h1><p><strong>旁站：</strong> 同服务器下的不同网站。当网站A无法渗透时，可以通过旁站注入获取网站B或者其他网站的权限。如果权限足够，直接跨目录写webshell；权限不够的话，尝试webshell提权获取服务器权限，进而渗透网站A。</p>
+<p><strong>C段：</strong> 同网段下的不同服务器。通过获取同网段下的服务器站点进行渗透，再进行webshell提权获取服务器权限，再进行内网渗透攻击目标服务器</p>
+<ul>
+<li>服务器操作系统类型</li>
+<li>端口开放和服务识别</li>
+<li>目标网络结构</li>
+</ul>
+<p>nmap工具使用</p>
+<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nmap -T4 -A -v 服务器IP</span><br></pre></td></tr></tbody></table></figure>
+
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nmap -T4 -A -v 服务器IP</span><br></pre></td></tr></tbody></table></figure>
+
+<p>在线查询地址：</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="http://www.webscan.cc/">http://www.webscan.cc/</a></li>
+<li><a target="_blank" rel="noopener" href="https://phpinfo.me/bing.php">https://phpinfo.me/bing.php</a></li>
+<li>&lt;<a target="_blank" rel="noopener" href="http://dns.aizhan.com/">http://dns.aizhan.com</a>&gt;</li>
+<li><a target="_blank" rel="noopener" href="http://www.114best.com/ip/114.aspx">http://www.114best.com/ip/114.aspx</a></li>
+</ul>
+<h1 id="part-5-弱点端口扫描"><a href="#part-5-弱点端口扫描" class="headerlink" title="part 5 弱点端口扫描"></a>part 5 弱点端口扫描</h1><h2 id="5-1-nmap端口扫描"><a href="#5-1-nmap端口扫描" class="headerlink" title="5.1 nmap端口扫描"></a>5.1 nmap端口扫描</h2><p>指定域名查询</p>
+<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nmap -T4 -Pn www.baidu.com</span><br></pre></td></tr></tbody></table></figure>
+
+<p>指定IP查询</p>
+<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nmap -T4 -Pn <span class="number">192.168</span><span class="number">.0</span><span class="number">.166</span></span><br></pre></td></tr></tbody></table></figure>
+
+<p>查询局域网的所有主机和IP</p>
+<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nmap -T4 -Pn <span class="number">192.168</span><span class="number">.0</span><span class="number">.0</span>/<span class="number">24</span></span><br></pre></td></tr></tbody></table></figure>
+
+<p>查看主机端口（1024-65535）中开放的端口</p>
+<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nmap -p <span class="number">1024</span>-<span class="number">65535</span> <span class="number">192.168</span><span class="number">.1</span><span class="number">.7</span></span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="5-2hydra爆破端口"><a href="#5-2hydra爆破端口" class="headerlink" title="5.2hydra爆破端口"></a>5.2hydra爆破端口</h2><figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https:<span class="comment">//www.cnblogs.com/ECJTUACM-873284962/p/7805116.html</span></span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="5-3-常见弱点端口"><a href="#5-3-常见弱点端口" class="headerlink" title="5.3 常见弱点端口"></a>5.3 常见弱点端口</h2><p>这里常见的弱点端口已经单独整理了一篇文章，点击链接跳转查看</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="http://luckyzmj.cn/posts/562916c6.html">http://luckyzmj.cn/posts/562916c6.html</a></li>
+</ul>
+<h1 id="part-6-网站漏洞扫描"><a href="#part-6-网站漏洞扫描" class="headerlink" title="part 6  网站漏洞扫描"></a>part 6  网站漏洞扫描</h1><hr>
+<h2 id="6-1-网站CMS指纹识别"><a href="#6-1-网站CMS指纹识别" class="headerlink" title="6.1 网站CMS指纹识别"></a>6.1 网站CMS指纹识别</h2><ul>
+<li>BugScaner：<a target="_blank" rel="noopener" href="http://whatweb.bugscaner.com/look/">http://whatweb.bugscaner.com/look/</a></li>
+<li>云悉指纹：<a target="_blank" rel="noopener" href="http://www.yunsee.cn/finger.html">http://www.yunsee.cn/finger.html</a></li>
+<li>WhatWeb：<a target="_blank" rel="noopener" href="https://whatweb.net/">https://whatweb.net/</a></li>
+<li>cmsmap：<a target="_blank" rel="noopener" href="https://github.com/dionach/CMSmap">https://github.com/dionach/CMSmap</a></li>
+<li>kali wpScan：针对WordPress版本网站</li>
+<li>kali joomScan：针对Joomla!版本网站</li>
+</ul>
+<h2 id="6-2-服务器类型"><a href="#6-2-服务器类型" class="headerlink" title="6.2 服务器类型"></a>6.2 服务器类型</h2><p><strong>操作系统：</strong> Windows和Linux</p>
+<p>最简单就是通过ping来探测，Windows的TTL值都是一般是128，Linux则是64。所以大于100的肯定是Windows，而几十的肯定是Linux。而且Windows大小写不敏感，Linux大小写敏感。</p>
+<p>判断目标网站服务器的具体的版本的话，可以采用 nmap 进行扫描， -O 和 -A 参数都能扫描出来</p>
+<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">nmap -O 服务器IP</span><br><span class="line">nmap -A 服务器IP</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="6-3-网站搭建平台"><a href="#6-3-网站搭建平台" class="headerlink" title="6.3 网站搭建平台"></a>6.3 网站搭建平台</h2><p>判断网站用的web搭建平台类型：Apache、Nginx、Tomcat、IIS。知道了web服务器是哪种类型后，我们还要探测web服务器具体的版本。比如Ngnix版本&lt; 0.83会有解析漏洞 ，IIS6.0会有文件名解析漏洞、IIS7.0会有畸形解析漏洞等。不同的web服务器版本，存在着不同漏洞。</p>
+<p>可以在网页审查元素中，刷新网络的数据包的响应头中获取到这些信息，或者用nmap等其他工具来扫描。</p>
+<h2 id="6-4-网站脚本类型"><a href="#6-4-网站脚本类型" class="headerlink" title="6.4 网站脚本类型"></a>6.4 网站脚本类型</h2><p>网站用的脚本类型：php 、Jsp 、Asp 、Aspx 。</p>
+<ol>
+<li>可以根据网站URL来判断</li>
+<li>site:xxx.com filetype:php</li>
+<li>可以根据Firefox的插件(wappalyzer)来判断</li>
+</ol>
+<h2 id="6-5-数据库类型"><a href="#6-5-数据库类型" class="headerlink" title="6.5 数据库类型"></a>6.5 数据库类型</h2><p>网站用的是哪种类型的数据库：MySQL、Oracle、SqlServer、Access 。虽然这几种数据库的语法大体上相同，但是还是有区别的。所以我们还是要知道目标网站用的是哪种数据库，并且数据库是哪个版本的</p>
+<p>从数据库的规模来看，Access是小型数据库，，MySQL 是中小型数据库，、SqlServer是中型数据库，Oracle是大型数据库。</p>
+<p>Access和SqlServer只支持Windows系统,如果是Linux系统，可以直接排除这两个数据库类型。</p>
+<p>常见搭配：</p>
+<ul>
+<li>ASP 和 ASPX：ACCESS、SQL Server</li>
+<li>PHP：MySQL、PostgreSQL</li>
+<li>JSP：Oracle、MySQL</li>
+</ul>
+<h2 id="6-6-网站敏感目录和文件"><a href="#6-6-网站敏感目录和文件" class="headerlink" title="6.6 网站敏感目录和文件"></a>6.6 网站敏感目录和文件</h2><p>扫描网站目录结构，看看是否可以遍历目录，或者敏感文件泄漏</p>
+<ul>
+<li>robots.txt：指定了网站中不想被robot访问的目录</li>
+<li>网站备份文件：网站源码、配置文件、数据库文件</li>
+<li>后台目录：弱口令，万能密码，爆破</li>
+<li>安装包：获取数据库信息，甚至是网站源码</li>
+<li>上传目录：截断、上传图片马等</li>
+<li>mysql管理接口：弱口令、爆破，万能密码，然后脱裤，甚至是拿到shell</li>
+<li>安装页面 ：可以二次安装进而绕过</li>
+<li>phpinfo：会把目标配置的各种信息暴露出来</li>
+<li>编辑器：fck、ke、等</li>
+<li>IIS短文件利用：条件比较苛刻 Windows、Apache等</li>
+</ul>
+<p>探测目标网站后台目录可以通过字典扫描、目录爬行、开源程序、搜索引擎、二级域名、端口站点、备份文件等方式查找，相关工具有： IntelliTamper、wwwscan 、御剑 、weakfilescan、 dirbuster、dirb、QWASP、Google Hacking等。</p>
+<h2 id="6-7-网站漏洞扫描"><a href="#6-7-网站漏洞扫描" class="headerlink" title="6.7 网站漏洞扫描"></a>6.7 网站漏洞扫描</h2><p>网站漏洞扫描就是直接对网站进行漏洞探测了。例如：任意文件上传、文件包含、文件读取、编辑器漏洞（FCKEditor、ewebeditor、KindEditor…）、XXE、常见CMS识别getshell等等。</p>
+<p>网站漏洞扫描也有很多工具。比如AWVS、AppScan、OWASP-ZAP、Nessuss、Netsparker、Safe3等等。但是需要注意的是，使用漏扫工具直接对网站进行扫描，因为一下子流量过大，有些网站可能会崩溃。所以一般最好不要使用漏洞扫描工具对网站进行扫描。并且如果未经授权就用漏扫对网站进行扫描还是违法的！</p>
+<h2 id="6-8-物理路径探测"><a href="#6-8-物理路径探测" class="headerlink" title="6.8 物理路径探测"></a>6.8 物理路径探测</h2><p>对目标写入webShell时需要用到真实物理路径。</p>
+<h3 id="6-8-1-探针文件"><a href="#6-8-1-探针文件" class="headerlink" title="6.8.1 探针文件"></a>6.8.1 探针文件</h3><p>很多网站在搭建时会留下包含有网站信息的文件，说明等。常见的探针遗留文件名</p>
+<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Phpinfo.php</span><br><span class="line">info.php</span><br><span class="line">test.php</span><br><span class="line">l.php</span><br><span class="line">php.php</span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="6-8-2-报错获得"><a href="#6-8-2-报错获得" class="headerlink" title="6.8.2 报错获得"></a>6.8.2 报错获得</h3><p>多用于容错做的不是很好的网站。可以访问404页面、动态URL加特殊符号（英文单引号等）、错误的SQL语句等。</p>
+<h3 id="6-8-3-后台获得"><a href="#6-8-3-后台获得" class="headerlink" title="6.8.3 后台获得"></a>6.8.3 后台获得</h3><p>如果可以登录到目标后台，一般后台首页会有一些说明，包括CMS版本、支持的组件、更新日期、数据库信息、物理路径、IP地址等。</p>
+<h3 id="6-8-4-IIS-高版本特性"><a href="#6-8-4-IIS-高版本特性" class="headerlink" title="6.8.4 IIS 高版本特性"></a>6.8.4 IIS 高版本特性</h3><p>IIS7-IIS8.5 如果配置不当，都有可能会存在这个问题，只有访问404的路径，就会爆出物理路径和IIS版本信息。</p>
+<h3 id="6-8-5-搜索引擎探测"><a href="#6-8-5-搜索引擎探测" class="headerlink" title="6.8.5 搜索引擎探测"></a>6.8.5 搜索引擎探测</h3><figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">site:xxx.com warning</span><br><span class="line">site:xxx.com error</span><br><span class="line">site:xxx.com mysql</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="6-9-Mail服务器"><a href="#6-9-Mail服务器" class="headerlink" title="6.9 Mail服务器"></a>6.9 Mail服务器</h2><p>Mail服务器可能会有web漏洞：比如：XSS、SQL、XXE、心脏出血、破壳漏洞等等。mail弱口令爆破，mail钓鱼，mail可能是外网入口，因为传递VPN密码，服务器密码等等。</p>
+<h2 id="6-10-网站WAF识别"><a href="#6-10-网站WAF识别" class="headerlink" title="6.10 网站WAF识别"></a>6.10 网站WAF识别</h2><p><strong>工具简介</strong></p>
+<p>WAFW00F识别和指纹Web应用防火墙（WAF）产品。其工作原理是首先通过发送一个正常http请求，然后观察其返回有没有一些特征字符，若没有在通过发送一个恶意的请求触发waf拦截来获取其返回的特征来判断所使用的waf。</p>
+<ul>
+<li>项目地址：<a target="_blank" rel="noopener" href="https://github.com/sandrogauci/wafw00f">https://github.com/sandrogauci/wafw00f</a></li>
+</ul>
+<p>安装：python3环境</p>
+<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python setup.py install</span><br></pre></td></tr></tbody></table></figure>
+
+<p>使用：切换到   <span style="color:orange;"><code>wafw00f</code></span>  目录下，然后执行命令</p>
+<h1 id="part-7-Github搜索语法"><a href="#part-7-Github搜索语法" class="headerlink" title="part 7 Github搜索语法"></a>part 7 Github搜索语法</h1><p>在渗透测试的信息收集阶段，可以去Github和码云上搜索与目标有关的信息，或者就有意想不到的收获。(有些开发人员将代码上传到代码库的时候，有可能连一些重要的配置信息也上传了)</p>
+<blockquote>
+<p><span style="color:orange;">原文链接：</span>  <a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_36119192/article/details/99690742">https://blog.csdn.net/qq_36119192/article/details/99690742</a></p>
+</blockquote>
+<h2 id="7-1-GitHub的搜索语法："><a href="#7-1-GitHub的搜索语法：" class="headerlink" title="7.1 GitHub的搜索语法："></a>7.1 <strong>GitHub的搜索语法：</strong></h2><figure class="highlight"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">in:name test 							#仓库标题搜索含有关键字</span><br><span class="line">SpringCloud in:descripton test 			#仓库描述搜索含有关键字 in:readme test #Readme文件搜素含有关键字 </span><br><span class="line">stars:&gt;3000 test 						#stars数量大于3000的搜索关键字 stars:1000..3000 test #stars数量大于1000小于3000的搜索关键字 </span><br><span class="line">forks:&gt;1000 test 						#forks数量大于1000的搜索关键字 </span><br><span class="line">forks:1000..3000 test 					#forks数量大于1000小于3000的搜索关键字 </span><br><span class="line">size:&gt;=5000 test 						#指定仓库大于5000k(5M)的搜索关键字 </span><br><span class="line">pushed:&gt;2019-02-12 test 				#发布时间大于2019-02-12的搜索关键字 </span><br><span class="line">created:&gt;2019-02-12 test 				#创建时间大于2019-02-12的搜索关键字 </span><br><span class="line">user:test 								#用户名搜素 </span><br><span class="line">license:apache-2.0 test 				#明确仓库的 LICENSE 搜索关键字 </span><br><span class="line">language:java test 						#在java语言的代码中搜索关键字 </span><br><span class="line">user:test in:name test 					#组合搜索,用户名test的标题含有test的</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="7-2-邮件配置信息收集"><a href="#7-2-邮件配置信息收集" class="headerlink" title="7.2 邮件配置信息收集"></a>7.2 <strong>邮件配置信息收集</strong></h2><p>很多网站及系统都会使用 pop3 和 smtp 发送来邮件，不少开发者由于安全意识不足会把相关的配置信息也放到Github上，所以如果这时候我们动用一下google搜索命令语句，构造一下关键字，就能把这些信息给找出来了。</p>
+<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">site:Github.com smtp </span><br><span class="line">site:Github.com smtp <span class="meta">@qq</span>.com </span><br><span class="line">site:Github.com smtp @<span class="number">126.</span>com </span><br><span class="line">site:Github.com smtp @<span class="number">163.</span>com </span><br><span class="line">site:Github.com smtp <span class="meta">@sina</span>.com.cn </span><br><span class="line">site:Github.com smtp password </span><br><span class="line">site:Github.com String password smtp</span><br><span class="line">…… </span><br><span class="line">    </span><br><span class="line">我们也可以锁定域名搜索结合厂商域名 灵活运用例如搜百度的 </span><br><span class="line">    </span><br><span class="line">site:Github.com smtp <span class="meta">@baidu</span>.com</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="7-3-数据库信息收集"><a href="#7-3-数据库信息收集" class="headerlink" title="7.3 数据库信息收集"></a>7.3 <strong>数据库信息收集</strong></h2><figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">site:Github.com sa password </span><br><span class="line">site:Github.com root password </span><br><span class="line">site:Github.com User ID=<span class="string">'sa'</span>;Password </span><br><span class="line">site:Github.com inurl:sql</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="7-4-SVN-信息收集"><a href="#7-4-SVN-信息收集" class="headerlink" title="7.4 SVN 信息收集"></a>7.4 <strong>SVN 信息收集</strong></h2><figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">site:Github.com svn</span><br><span class="line">site:Github.com svn username</span><br><span class="line">site:Github.com svn password</span><br><span class="line">site:Github.com svn username password</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="7-5-综合信息收集"><a href="#7-5-综合信息收集" class="headerlink" title="7.5 综合信息收集"></a>7.5 <strong>综合信息收集</strong></h2><figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">site:Github.com password</span><br><span class="line">site:Github.com ftp ftppassword</span><br><span class="line">site:Github.com 密码</span><br><span class="line">site:Github.com 内部</span><br></pre></td></tr></tbody></table></figure>
+
+<h1 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h1><ul>
+<li><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_36119192/article/details/84027438">https://blog.csdn.net/qq_36119192/article/details/84027438</a></li>
+</ul>
+
                 
             </div>
             <hr/>
@@ -556,7 +808,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://hgwredbull.github.io/2020/12/13/shi-jian-er/">http://hgwredbull.github.io/2020/12/13/shi-jian-er/</a>
+                    <a href="http://hgwredbull.github.io/2020/12/09/shen-tou-ce-shi-zhi-xin-xi-shou-ji/">http://hgwredbull.github.io/2020/12/09/shen-tou-ce-shi-zhi-xin-xi-shou-ji/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -593,7 +845,15 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/%E7%BD%91%E7%BB%9C%E6%B8%97%E9%80%8F/">
+                                    <span class="chip bg-color">网络渗透</span>
+                                </a>
+                            
+                                <a href="/tags/%E6%90%9C%E9%9B%86/">
+                                    <span class="chip bg-color">搜集</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -1028,12 +1288,12 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2021/01/05/nmap-shi-yong-zhi-nan/">
+                <a href="/2020/12/13/gua-he-xin-shou-de-ctf-ba-chang-ji-he/">
                     <div class="card-image">
                         
-                        <img src="/medias/featureimages/33.jpg" class="responsive-img" alt="Nmap使用指南">
+                        <img src="/medias/featureimages/35.jpg" class="responsive-img" alt="适合新手的CTF靶场集合">
                         
-                        <span class="card-title">Nmap使用指南</span>
+                        <span class="card-title">适合新手的CTF靶场集合</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1044,60 +1304,8 @@
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-01-05
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-12-13
                         </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/" class="post-category">
-                                    实用工具
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/Nmap/">
-                        <span class="chip bg-color">Nmap</span>
-                    </a>
-                    
-                    <a href="/tags/%E7%BD%91%E7%BB%9C%E6%B8%97%E9%80%8F/">
-                        <span class="chip bg-color">网络渗透</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2020/12/13/shi-jian/">
-                    <div class="card-image">
-                        
-                        <img src="/medias/featureimages/35.jpg" class="responsive-img" alt="实践">
-                        
-                        <span class="card-title">实践</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-12-13
-                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -1121,6 +1329,43 @@
                         <span class="chip bg-color">渗透测试</span>
                     </a>
                     
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2020/12/09/hello-world/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                        
+                        <span class="card-title">Hello World</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-12-09
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            Hcn
+                            
+                        </span>
+                    </div>
                 </div>
                 
             </div>
@@ -1304,7 +1549,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">6.3k</span>&nbsp;字
+                class="white-color">13k</span>&nbsp;字
             
             
             
