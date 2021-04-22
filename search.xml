@@ -31,6 +31,31 @@
     
     
     <entry>
+      <title>Markdown 常用语法</title>
+      <link href="2020/12/13/hello-world/"/>
+      <url>2020/12/13/hello-world/</url>
+      
+        <content type="html"><![CDATA[<h1 id="part-1-原-markdown-语法"><a href="#part-1-原-markdown-语法" class="headerlink" title="part 1.  原 markdown 语法"></a>part 1.  原 markdown 语法</h1><h2 id="1-1-原-markdown-语法"><a href="#1-1-原-markdown-语法" class="headerlink" title="1.1 原 markdown 语法"></a>1.1 原 markdown 语法</h2><figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![这是图片描述](这是图片链接)</span><br></pre></td></tr></tbody></table></figure><h2 id="1-2-html-语法"><a href="#1-2-html-语法" class="headerlink" title="1.2 html 语法"></a>1.2 html 语法</h2><figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;p align=<span class="string">"center"</span>&gt;  &lt;imgsrc=<span class="string">"https://raw.githubusercontent.com/shw2018/cdn/master/blog_files/img/PicGo-Github-PicBed/2.png"</span> &gt;</span><br><span class="line">&lt;/p&gt;</span><br><span class="line"></span><br></pre></td></tr></tbody></table></figure><h1 id="part-2-几种文章内视频插入的方法"><a href="#part-2-几种文章内视频插入的方法" class="headerlink" title="part 2. 几种文章内视频插入的方法"></a>part 2. 几种文章内视频插入的方法</h1><h2 id="例1："><a href="#例1：" class="headerlink" title="例1："></a>例1：</h2><figure class="highlight"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;video width="100%" height=100% src="http://yanghexo.cn-bj.ufileos.com/github.mp4" controls="controls" poster="http://yanghexo.cn-bj.ufileos.com/github.jpg" preload="auto"&gt; &lt;/video&gt;</span><br></pre></td></tr></tbody></table></figure><h3 id="效果："><a href="#效果：" class="headerlink" title="效果："></a>效果：</h3><p><a href="http://yanghexo.cn-bj.ufileos.com/github.mp4">http://yanghexo.cn-bj.ufileos.com/github.mp4</a></p><h2 id="例2："><a href="#例2：" class="headerlink" title="例2："></a>例2：</h2><p>需要先装一个插件：<code>npm install hexo-tag-dplayer --save</code> </p><figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">{% dplayer <span class="string">"url=https://moeplayer.b0.upaiyun.com/dplayer/hikarunara.mp4"</span> <span class="string">"addition=https://dplayer.daoapp.io/bilibili?aid=4157142"</span> <span class="string">"api=https://api.prprpr.me/dplayer/"</span> <span class="string">"pic=https://moeplayer.b0.upaiyun.com/dplayer/hikarunara.jpg"</span> <span class="string">"id=9E2E3368B56CDBB4"</span> <span class="string">"loop=yes"</span> <span class="string">"theme=#FADFA3"</span> <span class="string">"autoplay=false"</span> <span class="string">"token=tokendemo"</span> %} </span><br><span class="line">{% dplayer <span class="string">'url=some.mp4'</span> <span class="string">"id=someid"</span> <span class="string">"api=https://api.prprpr.me/dplayer/"</span> <span class="string">"addition=/some.json"</span> <span class="string">'code=player.on("loadstart",function(){console.log("loadstart")})'</span> <span class="string">"autoplay"</span> %}</span><br></pre></td></tr></tbody></table></figure><h3 id="效果：-1"><a href="#效果：-1" class="headerlink" title="效果："></a>效果：</h3><h2 id="例三"><a href="#例三" class="headerlink" title="例三:"></a>例三:</h2><p>iframe内嵌哔哩哔哩视频播放</p><figure class="highlight"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;iframe width="100%" height="100%" src="//player.bilibili.com/player.html?aid=52012946&amp;cid=91055960&amp;page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"&gt; &lt;/iframe&gt;</span><br></pre></td></tr></tbody></table></figure><p><a href="https://hexo.io/docs/one-command-deployment.html">https://hexo.io/docs/one-command-deployment.html</a>)</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 实用工具 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Markdown </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>CSS基础入门</title>
       <link href="2020/12/13/css-ji-chu-ru-men/"/>
       <url>2020/12/13/css-ji-chu-ru-men/</url>
@@ -106,19 +131,6 @@
             <tag> 搜集 </tag>
             
         </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Hello World</title>
-      <link href="2020/12/09/hello-world/"/>
-      <url>2020/12/09/hello-world/</url>
-      
-        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></tbody></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></tbody></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></tbody></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></tbody></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
-      
-      
       
     </entry>
     
